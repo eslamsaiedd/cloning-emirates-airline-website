@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>emirates</title>    
+    <link rel="stylesheet" href="emirates.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+ <body>
+    <div class="overlayer">
+        <nav>
+            <main class="container">
+
+            <div class="parent-nav-left">
+                <div class="nav-img">
+                    <img src="https://c.ekstatic.net/ecl/logos/emirates/emirates-logo-badge.svg?h=d-52wmsnqryhi7L83BAKpg">
+                </div>
+                <ul class="nav-left ">    
+                    <li class="hide-nav"> BOOK </li>
+                    <li class="hide-nav">MANAGE</li>
+                    <li class="hide-nav">EXPERIENCE</li> 
+                    <li class="hide-nav"> WHERE WE FLY  </li>
+                    <li class="hide-nav"> LOYALTY </li>
+                    <li class="hide-nav"> HELP </li>
+                </ul>
+                <ul class="sidebar">   
+                    <li onclick= hidesidebar()><span class="material-symbols-outlined">close</span></li> 
+                    <li> BOOK </li>
+                    <li>MANAGE</li>
+                    <li>EXPERIENCE</li> 
+                    <li> WHERE WE FLY  </li>
+                    <li> LOYALTY </li>
+                    <li> HELP </li>
+                </ul>
+            </div>
+            <ul class="nav-right">
+                <li>
+                    <span class="nav-right-country">
+                        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+                        <span class="material-symbols-outlined">
+                            globe_uk
+                            </span>
+                    </span>
+                    EG
+                </li>
+                <li class="search-li">
+                    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+                    <span class="material-symbols-outlined">
+                        search
+                        </span>
+                </li>
+                <li class="log-in-li">
+                    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> 
+                    <span class="material-symbols-outlined">
+                        account_circle
+                        </span>
+                        <p>
+                            Log in
+                        </p>
+                </li>         
+                <li>
+                    <button onclick=showsidebar() class="button-menu">MENU</button>
+                </li>
+            </ul>
+        </main>
+
+        </nav>
+
+    <section class="hero-contetnt ">
+
+        <img class="background" src="https://c.ekstatic.net/ecl/destinations/middle-east/united-arab-emirates/happy-family-playing-in-transparent-sea-by-burj-al-arab-hp-w1920x480.jpg?h=6mfgEDeioJ1aQOhDpxabyA" alt="">
+        <div class="data-image container">
+            <div class="hero-title">
+                <div class="img-fly">
+                    <img class="fly" src="https://c.ekstatic.net/ecl/logos/emirates/emirates-fly-better-white.svg?h=ASXr1bEvRLq6igZoljExYw" alt="">
+                </div>
+                    <h1 class="flex">
+                    <span class="frist-title"> Enjoy winter offers with</span>
+                    <span class="sec-title">  my Emirates Pass </span>
+                    <span class="thr-title"> in Dubai and the UAE </span>
+                   <span class="last-title">
+                    <button class="learn-hero-title">
+                        Learn more
+                    </button>
+                   </span>
+                </h1>
+              
+            </div>
+        </div>
+    </section>  
+
+       <!-- <div class="flight-data container "> -->
+        <div class="data-flight  container one-row">
+                <ul >
+                    <li class="option-li clicked"> 
+                        <a>
+                            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+                            <span class="material-symbols-outlined">
+                                flightsmode
+                            </span>
+                            <p>Search flights</p>
+                        </a>
+                    </li>
+                    <li class="option-li"> 
+                        <a>
+                            <span class="material-symbols-outlined">
+                                sell
+                                </span>
+                          <p>  Manage booking / Check in</p>
+                        </a>
+                    </li>
+                    <li class="option-li"> 
+                        <a>
+                            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+                            <span class="material-symbols-outlined">
+                                airlines
+                                </span>
+                           <p> What's on your flight</p>
+                        </a>
+                    </li>
+                    <li class="option-li"> 
+                        <a>
+                            <span class="material-symbols-outlined">
+                                track_changes
+                                </span>
+                           <p> Flight status</p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="reserve">
+                    <label class="flight-one flight">
+                            <img class="check" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3
+                            LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNiA0LjIwMSAxMy40ODYgMS42IDYuNDUzIDkuMzE2IDIuNjMzIDUuNTYgMCA4LjE2MSA
+                            zLjgyIDExLjggNi40NTMgMTQuNGwyLjUxNS0yLjYwMUwxNiA0LjJaIiBmaWxsPSIjRDcxOTIxIi8+PC9zdmc+" alt="">
+                        Flight
+                    </label>
+                    <label class="flight-two flight">Flight + hotel</label>
+                    <div class="link">
+                        <a> Advanced search: multi-city, promo codes, partner airlines 
+                            <span class="material-symbols-outlined  Navigate-Next">
+                                navigate_next
+                                </span>
+                        </a>
+                    </div>
+                    <div class="input">
+                        <div class="edit-input">
+                            <input placeholder="enter text" id="airportId" type="text">
+                            <label for="airportId" class="label">Departure airport</label>
+                        </div>
+                        <div class="edit-input">
+                            <input placeholder="enter text" id="airportIdx" type="text">
+                            <label for="airportIdx" class="label">Arrival airport</label>
+                        </div>
+                        <button>Continue</button>
+                    </div>
+                </div>
+        </div>
+        <div class="chose-road container">
+            <ul>
+                <li>
+                    <a>
+                        <i class="fa-solid fa-hotel"></i>
+                        <span>
+                            hotels
+                        </span>
+                    </a>
+                </li>
+                <li >
+                    <a >
+                        <i class="fa-solid fa-car"></i>
+                        <!-- <i class="fa-solid fa-arrow-up-right-from-square"></i> -->
+                        <span>
+                            Car rentals
+                        </span>  
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        
+                        <span>
+                            Tours &<br> activities
+                        </span>  
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span>
+                            Book a holiday
+                        </span>  
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span>
+                            Dubai<br> Experience
+                        </span>  
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span>
+                            Chauffeur-drive
+                        </span>  
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <i class="fa-solid fa-handshake"></i>
+                        <span>
+                            Meet & Greet
+                        </span>  
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <i class="fa-solid fa-bus"></i>
+                        <span>
+                            Airport <br>transfers  
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="join-now-emirates">
+            <div class="up-img-back-black">
+                <div class="up-img">
+                <img  class="Circles" src="https://c.ekstatic.net/ecl/skywards/skywards-tier-signup.png" alt="">
+                </div>
+                <div class="skywards">
+                    <span class="skywards-title">Join Emirates Skywards</span>
+                    <p>Become an Emirates Skywards member and start enjoying flight rewards, upgrades and more</p>
+                </div>
+                <button class="join-now">Join now</button>
+            </div>
+        </div>
+        <div class="Countries container">
+            <div class="flex-space-between">
+                <h2>  Featured destinations from <span>Cairo</span> 
+                </h2>
+                <img class="best-price" src="https://c.ekstatic.net/ecl/logos/best-price-logos/best-price-eg.svg?h=7koPKY9cHuLfm1MhRs8lIQ" alt="">
+            </div>
+        </div>
+            <div class="images-islands-boxes container">
+                <div class="mani-box">
+                    <img src="https://c.ekstatic.net/shared/images/destination/v1/airports/MLE/810x270.jpg" alt="">
+                    <div class=" data-box">
+                        <p class="city-card-county">Maldives</p>
+                        <h3 class="city-card-city">Malé</h3>
+                        <p class="city-card-data">Book Economy Class Return until 31 May 24</p>
+                        <p class="city-card-price">from EGP 13,702*</p>
+                    </div>
+                </div>
+                <div class="mani-box">
+                    <img src="https://c.ekstatic.net/shared/images/destination/v1/airports/DXB/810x270.jpg" alt="">
+                    <div class=" data-box">
+                        <p class="city-card-county">United Arab Emirates</p>
+                        <h3 class="city-card-city">Dubai</h3>
+                        <p class="city-card-data">Book Economy Class Return until 31 May 24</p>
+                        <p class="city-card-price">from EGP 15,655*</p>
+                    </div>
+                </div>
+                <div class="mani-box">
+                    <img src="https://c.ekstatic.net/shared/images/destination/v1/airports/JED/810x270.jpg" alt="">
+                    <div class=" data-box">
+                        <p class="city-card-county">Saudi Arabia</p>
+                        <h3 class="city-card-city">judah</h3>
+                        <p class="city-card-data">Book Economy Class Return until 31 May 24</p>
+                        <p class="city-card-price">from EGP 18,817*</p>
+                    </div>
+                </div>
+                <div class="mani-box">
+                    <img src="https://c.ekstatic.net/shared/images/destination/v1/airports/KUL/810x270.jpg" alt="">
+                    <div class=" data-box">
+                        <p class="city-card-county">Malaysia</p>
+                        <h3 class="city-card-city">Kuala Lumpur</h3>
+                        <p class="city-card-data">Book Economy Class Return until 31 May 24</p>
+                        <p class="city-card-price">from EGP 20,987*</p>
+                    </div>
+                </div>
+                <div class="mani-box">
+                    <img src="https://c.ekstatic.net/shared/images/destination/v1/airports/DPS/810x270.jpg" alt="">
+                    <div class=" data-box">
+                        <p class="city-card-county">Indonesia</p>
+                        <h3 class="city-card-city">Bali</h3>
+                        <p class="city-card-data">Book Economy Class Return until 31 May 24</p>
+                        <p class="city-card-price">from EGP 28,737*</p>
+                    </div>
+                </div>
+                <div class="mani-box">
+                    <img src="https://c.ekstatic.net/shared/images/destination/v1/airports/SYD/810x270.jpg" alt="">
+                    <div class=" data-box">
+                        <p class="city-card-county">Australia</p>
+                        <h3 class="city-card-city">Sydney</h3>
+                        <p class="city-card-data">Book Economy Class Return until 31 May 24</p>
+                        <p class="city-card-price">from EGP 48,701*</p>
+                    </div>
+                </div>
+                    <div class="button">
+                        <div class="button-text">
+                          <button>See more fares</button>
+                          <span class="terms-center"> *Terms and conditions apply </span>
+                        </div>
+                          <a class="first a ">Explore more destinations
+                          <span class="material-symbols-outlined ">
+                              navigate_next
+                          </span>
+                          </a>
+                          <a class="last a">Be inspired by our route map
+                          <span class="material-symbols-outlined navigate-right">
+                              navigate_next
+                              </span>
+                          </a>
+                      </div>
+            </div>
+            <div class="background-plan ">
+                <img src="https://c.ekstatic.net/ecl/aircraft-interior/premium-economy/emirates-premium-economy-seat-w1920x480.jpg?h=_WrZVzOa_-M3hhiFNdXD7g" alt="">
+                <div class="data-backgroundplan">
+                    <span>
+                        <p class="EXPERIENCE-DUBAI">EXPERIENCE DUBAI</p>
+                        <h2>Enjoy exclusive offers with My Emirates Pass</h2>
+                        <p class="best-dubai">Get the best from your Dubai holiday and use your boarding pass to access exclusive offers.</p>
+                    </span>
+                    <button class="learn-more">Learn more</button>
+                </div>
+            </div>
+            <div class="text-emirates">
+                <p class="flying">Flying with Emirates</p>
+                <h2 class="make-emirates"> Make it an incredible journey </h2>
+                <p class="Explore-emirates">Explore the Emirates experience and plan an unforgettable trip beyond your flight.</p>
+            </div>
+            <div class="five-big-boxes container">
+                <div class="box-one-experience">
+                    <img src="https://c.ekstatic.net/ecl/destinations/middle-east/united-arab-emirates/dubai-downtown-skyline-at-sunset-d800x600.jpg?h=7vZ6mr2XU87yHyZCOdmZhw" alt="DUBAI">
+                    <div class="text-in-img">
+                        <p class="dubai-p">DUBAI EXPERIENCE</p>
+                        <h3>Create your Dubai <br>Experience</h3>
+                        <p class="learn-p">Learn more</p>
+                    </div>
+                </div>
+                <div class="width100-boxs">
+                    <div class="boxs-small">
+                        <img src="https://c.ekstatic.net/ecl/food/first-class-dessert-w800x600.jpg?h=Wxf9CC7WhFAck7s5_QF1o" alt="">
+                        <div class="text-in-img-small">
+                            <p class="cabin-p">CABIN FEATURES</p>
+                            <h3>First Class</h3>
+                            <p class="learn-p">Learn more</p>
+                        </div>
+                </div>
+                <div class="boxs-small">
+                    <img src="https://c.ekstatic.net/ecl/food/business-class-meal-w800x600.jpg?h=MvOq0t5vAseWLn6fdsIGVg" alt="">
+                    <div class="text-in-img-small">
+                        <p class="cabin-p">CABIN FEATURES</p>
+                        <h3>Business Class</h3>
+                        <p class="learn-p">Learn more</p>
+                    </div>
+                </div>
+                <div class="boxs-small">
+                    <img src="https://c.ekstatic.net/ecl/food/premium-economy-menu-w800x600.jpg?h=nUi11H3iz4bSSPJ0xdtGxQ" alt="">
+                    <div class="text-in-img-small">
+                        <p class="cabin-p">CABIN FEATURES</p>
+                        <h3>Premium Economy</h3>
+                        <p class="learn-p">Learn more</p>
+                    </div>
+                </div>
+                <div class="boxs-small">
+                    <img src="https://c.ekstatic.net/ecl/food/economy-class-chocolate-dessert-w800x600.jpg?h=8IPeHQHGlgz6DFNMUYc9bQ" alt="">
+                    <div class="text-in-img-small">
+                        <p class="cabin-p">CABIN FEATURES</p>
+                        <h3>Economy Class</h3>
+                        <p class="learn-p">Learn more</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="background-#fff">
+            <div class="up-img-circle container">
+              <div class="title-about-us">
+                <h2 >About us</h2>
+                <p >Learn more about our history, our business and sustainability initiatives</p>
+              </div>
+              <div class="four-circle-img">
+                  <div class="one-circle">
+                    <img src="https://c.ekstatic.net/ecl/agent-portal/a380-sky-view-w300x300.jpg?h=sBnzkrJJvKVp6g8XwpcDoA" alt="">
+                    <a href="#">Our business</a>
+                    <!-- <a href="#">Our business</a> -->
+                </div>
+                <div class="one-circle">
+                    <img src="https://c.ekstatic.net/ecl/destinations/africa/south-africa/sunlight-baths-the-blyde-river-canyon-w300x300.jpg?h=Dy3u7WDNZeGj8figwrr98w" alt="">
+                  <a href="#">Our planet</a>
+                </div>
+                <div class="one-circle">
+                    <img src="https://c.ekstatic.net/ecl/emirates-staff/ground-staff/emirates-group-staff-group-photo-m300x300.jpg?h=uwsAa20y9RhQZSteKnIqmw" alt="">
+                    <a href="#">Our people</a>
+                </div>
+                <div class="one-circle">
+                    <img src="https://c.ekstatic.net/ecl/about-us/family-planting-tree-w300x300.jpg?h=ar8-hQpf-unRHqmjJ_gsRA" alt="">
+                    <a href="#">Our communities</a>
+                </div>
+              </div>
+            </div>
+            </div>
+        <div class="back-ground-black">
+            <div class="footer container">
+                <div class="one-row-footer">
+                    <div class="one-column-footer">
+                        <h4>About us</h4>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#"> Careers </a></li>
+                            <li><a href="#"> Media Centre  </a></li>
+                            <li><a href="#"> Our planet  </a></li>
+                            <li><a href="#"> Our people  </a></li>
+                            <li><a href="#"> Our communities  </a></li>
+                        </ul>
+                    </div>
+                    <div class="one-column-footer">
+                        <h4> Help </h4>
+                        <ul>
+                            <li><a href="#"> Help and Contact  </a></li>
+                            <li><a href="#">  Travel Updates  </a></li>
+                            <li><a href="#"> Special Assistance   </a></li>
+                            <li><a href="#"> Frequently asked questions </a></li>
+                        </ul>
+                    </div>
+                    <div class="one-column-footer">
+                        <h4> Book </h4>
+                        <ul>
+                            <li><a href="#"> Book flights  </a></li>
+                            <li><a href="#">  Travel services  </a></li>
+                            <li><a href="#"> Transportation  </a></li>
+                            <li><a href="#"> Planning your trip  </a></li>
+                            <li><a href="#"> Search for flights  </a></li>
+                            <li><a href="#"> Dubai Experience  </a></li>
+                        </ul>
+                    </div>
+                    <div class="one-column-footer">
+                        <h4> Manage </h4>
+                        <ul>
+                            <li><a href="#"> Check-in  </a></li>
+                            <li><a href="#">  Manage your booking  </a></li>
+                            <li><a href="#">  Chauffeur drive  </a></li>
+                            <li><a href="#"> Flight status  </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="two-row-footer">
+                    <div class="two-column-footer">
+                        <h4> Before you fly </h4>
+                        <ul>
+                            <li><a href="#"> Baggage  </a></li>
+                            <li><a href="#"> Visa and passport information  </a></li>
+                            <li><a href="#"> Health  </a></li>
+                            <li><a href="#"> Travel information  </a></li>
+                            <li><a href="#"> Dubai International   </a></li>
+                            <li><a href="#"> To and from the airport  </a></li>
+                            <li><a href="#"> Rules and notices   </a></li>
+                        </ul>
+                    </div>
+                    <div class="two-column-footer">
+                        <h4> Where we fly  </h4>
+                        <ul>
+                            <li><a href="#">  Route map  </a></li>
+                            <li><a href="#">  Africa  </a></li>
+                            <li><a href="#">  Asia and Pacific  </a></li>
+                            <li><a href="#"> Europe  </a></li>
+                            <li><a href="#">  The Americas   </a></li>
+                            <li><a href="#"> The Middle East  </a></li>
+                            <li><a href="#"> Flights to all countries/territories  </a></li>
+                        </ul>
+                    </div>
+                    <div class="two-column-footer">
+                        <h4> Experience </h4>
+                        <ul>
+                            <li><a href="#"> Cabin features  </a></li>
+                            <li><a href="#"> Shop Emirates  </a></li>
+                            <li><a href="#"> What's on your flight  </a></li>
+                            <li><a href="#"> Inflight entertainment  </a></li>
+                            <li><a href="#"> Dining  </a></li>
+                            <li><a href="#"> Our lounges  </a></li>
+                            <li><a href="#"> Dubai Stopover  </a></li>
+                        </ul>
+                    </div>
+                    <div class="two-column-footer">
+                        <h4> Loyalty </h4>
+                        <ul>
+                            <li><a href="#"> Log in to Emirates Skywards  </a></li>
+                            <li><a href="#"> Join Emirates Skywards  </a></li>
+                            <li><a href="#"> Our partners  </a></li>
+                            <li><a href="#"> Business Rewards benefits  </a></li>
+                            <li><a href="#">  Register your company  </a></li>
+                            <li><a href="#"> Emirates Skywards Programme Rules  </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="three-row-footer">
+                    <div class="three-column-footer">
+                        <h4>Subscribe to our special offers</h4>
+                        <p class="save-with">
+                            Save with our latest fares and offers.  
+                            <a href="#"> Unsubscribe or change your preferences </a>
+                        </p>
+                        <input type="text" id="email" placeholder="enter text">
+                        <label for="email">Email address</label>
+                        <button><span>Subscribe</span></button>
+                        <p class="link-in-p">  For details on how we use your information, please see our <a href="#">privacy policy</a></p>
+                    </div>
+                    <div class="three-column-footer">
+                        <h4>Emirates App</h4>
+                        <p>
+                            Book and manage your flights on the go. 
+                        </p>
+                        <img src="https://c.ekstatic.net/ecl/logos/appstore/apple-en.svg?h=FJJxsKPmgHqgUIyQclfJDQ" alt="">
+                        <img src="https://c.ekstatic.net/ecl/logos/appstore/google-en.svg?h=cmeirryR6eVLHItt4HLLeQ" alt="">
+                    </div>
+                    <div class="three-column-footer">
+                        <h4>Connect with us</h4>
+                        <p>
+                            Share your Emirates experience.
+                        </p>
+                        <ul>
+                            <li><a href="#"> <i class="fa-brands fa-square-facebook" style="color: #000000;"></i></a></li>
+                            <li> <a href="#"> <i class="fa-brands fa-square-x-twitter" style="color: #000000;"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin" style="color: #000000;"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-square-youtube" style="color: #000000;"></i></a></li>
+                            <li> <a href="#"><i class="fa-brands fa-square-instagram" style="color: #000000;"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="four-row-footer">
+                    <div class="img-footer">
+                        <img src="https://c.ekstatic.net/ecl/logos/awards/apex-world-class-airline.svg?h=TUKEalKMnvKQogINjvDRqQ" alt="img">
+                    </div> 
+                    <div class="img-footer">
+                        <img src="https://c.ekstatic.net/ecl/logos/awards/fgfa-star.svg?h=Za6v2MGXyMZnknGkPgla4Q" alt="">
+                    </div> 
+                    <div class="img-footer">
+                        <img src="https://c.ekstatic.net/ecl/logos/awards/skytrax-badge-2019.svg?h=1fb76e074d973bfc22470adad6d5cae0" alt="">
+                    </div> 
+                    
+                </div>
+                <div class="five-row-footer-links">
+                    <ul>
+                        <li><a href="#">Accessibility statement  </a></li>
+                        <li><a href="#">Contact us  </a></li>
+                        <li><a href="#">Privacy policy  </a></li>
+                        <li><a href="#">Terms and conditions  </a></li>
+                        <li><a href="#">Cookie Policy  </a></li>
+                        <li><a href="#">Cybersecurity  </a></li>
+                        <br>
+                        <li><a href="#">Modern Slavery Act transparency statement  </a></li>
+                        <li><a href="#">Sitemap  </a></li>
+                        <div class="logo-c-footer">
+                            <p>© 2024 The Emirates Group. All Rights Reserved.</p>
+                        </div>
+                    </ul>
+                    <a href="#" class="footer-logo-red">
+                        <img src="https://c.ekstatic.net/ecl/logos/emirates/emirates-logo-badge.svg?h=d-52wmsnqryhi7L83BAKpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+       </div>
+<!-- </div> -->
+
+<!-- *fixed element in the right -->
+<div class="feed-fixed">
+    <div class="icon-feedback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <span class="material-symbols-outlined icon color-normal">
+            photo_camera_front
+            </span>
+    </div>
+    Feedback
+</div>
+
+<script>
+    function showsidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+    function hidesidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+</script>
+</body>
+</html>
